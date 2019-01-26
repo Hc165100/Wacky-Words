@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/madLib.css"
+  </head>
+
+  <body>
+    <div id="gameCanvas">
+      <div id="titlePage">
+        <h1>Wacky Words</h1>
+        <img id="wackyFace" src="src/images/Wacky Words Face.jpg" />
+        <div id="storySelection">
+          <button class="selectionArrow" id="leftArrow"></button>
+          <span id="storyTitle">Movie Pitch</span>
+          <button class="selectionArrow" id="rightArrow"></button>
+        </div>
+        <button id="selectBtn">Select</button>
+      </div>
+      <div id="movieContainer">
+        <div class="storyDiv" id="movieStory">
+          So here's the pitch. A
+          <span class="movieBlank" id="movieblank1">20</span> year old
+          <span class="movieBlank" id="movieblank2">woman</span> decides to
+          start a new life in
+          <span class="movieBlank" id="movieblank3">Korea</span>. For 12
+          <span class="movieBlank" id="movieblank4">years</span> they have
+          studied the art of
+          <span class="movieBlank" id="movieblank5">painting</span>, and are
+          finally leaving their teacher to make their own
+          <span class="movieBlank" id="movieblank6">paintings</span>. Before
+          they can rent <span id="moviearticleChange7">a</span>
+          <span class="movieBlank" id="movieblank7">car</span> to travel away,
+          <span id="moviearticleChange8">a </span
+          ><span class="movieBlank" id="movieblank8"> green</span>
+          <span class="movieBlank" id="movieblank9">dog</span> comes to them in
+          a dream and says "<span class="movieBlank" id="movieblank10"
+            >Gosh</span
+          >! We still need you to find the
+          <span class="movieBlank" id="movieblank11">black</span>
+          <span class="movieBlank" id="movieblank12">hammer</span>. The fate of
+          all <span class="movieBlank" id="movieblank13">Italy</span> depends on
+          it." This dream makes them feel
+          <span class="movieBlank" id="movieblank14">strange</span>, but they
+          decide to start looking after a good night's
+          <span class="movieBlank" id="movieblank15">rest</span>. What follows
+          is a story of
+          <span class="movieBlank" id="movieblank16">intrigue</span>,
+          <span class="movieBlank" id="movieblank17">spies</span>, and
+          <span class="movieBlank" id="movieblank18">delicious</span>
+          <span class="movieBlank" id="movieblank19">pizza</span>. What do you
+          think?
+        </div>
+
+        <form id="movieUserInputs">
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Number"
+            id="movieinput1"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Profession"
+            id="movieinput2"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Country"
+            id="movieinput3"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Plural unit of time"
+            id="movieinput4"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Verb ending in -ing"
+            id="movieinput5"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Plural noun"
+            id="movieinput6"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Mode of transportation"
+            id="movieinput7"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Adjective"
+            id="movieinput8"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Animal"
+            id="movieinput9"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Exclamation"
+            id="movieinput10"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Adjective"
+            id="movieinput11"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Noun"
+            id="movieinput12"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Proper Name Location"
+            id="movieinput13"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Adjective"
+            id="movieinput14"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Verbal noun"
+            id="movieinput15"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Noun (Emotional state)"
+            id="movieinput16"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Plural noun"
+            id="movieinput17"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Adjective"
+            id="movieinput18"
+          />
+          <input
+            class="movieInput"
+            type="text"
+            placeholder="Food"
+            id="movieinput19"
+          />
+        </form>
+        <button id="movieChangeBtn">Create Story</button>
+        <button class="clearBtn" id="movieClearBtn">Clear</button><br />
+        <button class="returnBtn" id="movieReturnBtn">
+          Choose Another Story
+        </button>
+      </div>
+      <div id="pirateContainer">
+        <div class="storyDiv" id="pirateStory">
+          Behold the tale of Captain
+          <span class="pirateBlank" id="pirateBlank1"> fuzzy</span> Legs! He is
+          the most
+          <span class="pirateBlank" id="pirateBlank2">fearsome</span> buccaneer
+          on the 7 <span class="pirateBlank" id="pirateBlank3">seas</span>. On
+          board his ship
+          <span class="pirateBlank" id="pirateBlank4">Robert</span>'s
+          <span class="pirateBlank" id="pirateBlank5">Dog</span>, he and his
+          crew search for all the
+          <span class="pirateBlank" id="pirateBlank6">frogs</span> they can
+          steal. You can always see the Captain coming on the horizon, his
+          <span class="pirateBlank" id="pirateBlank7">green</span> flag
+          emblazoned with a skull-faced
+          <span class="pirateBlank" id="pirateBlank8">turtle</span> flapping in
+          the wind. In spite of all his fierceness, he has one great weakness:
+          his fear of the giant
+          <span class="pirateBlank" id="pirateBlank9">red</span>
+          <span class="pirateBlank" id="pirateBlank10">lobster</span>. It has
+          haunted the captain's dreams for
+          <span class="pirateBlank" id="pirateBlank11">12</span> years, ever
+          since it
+          <span class="pirateBlank" id="pirateBlank12">killed</span> his
+          <span class="pirateBlank" id="pirateBlank13">kittens</span>. He always
+          has his trusty
+          <span class="pirateBlank" id="pirateBlank14">sword</span> at hand, in
+          case he should ever meet it again.
+        </div>
+
+        <form id="pirateUserInputs">
+          <input
+            type="text"
+            placeholder="Adjective"
+            class="pirateInput"
+            id="pirateInput1"
+          />
+          <input
+            type="text"
+            placeholder="Adjective"
+            class="pirateInput"
+            id="pirateInput2"
+          />
+          <input
+            type="text"
+            placeholder="Body of Water (Plural)"
+            class="pirateInput"
+            id="pirateInput3"
+          />
+          <input
+            type="text"
+            placeholder="Proper Name"
+            class="pirateInput"
+            id="pirateInput4"
+          />
+          <input
+            type="text"
+            placeholder="Noun"
+            class="pirateInput"
+            id="pirateInput5"
+          />
+          <input
+            type="text"
+            placeholder="Plural noun"
+            class="pirateInput"
+            id="pirateInput6"
+          />
+          <input
+            type="text"
+            placeholder="Adjective"
+            class="pirateInput"
+            id="pirateInput7"
+          />
+          <input
+            type="text"
+            placeholder="Noun"
+            class="pirateInput"
+            id="pirateInput8"
+          />
+          <input
+            type="text"
+            placeholder="Adjective"
+            class="pirateInput"
+            id="pirateInput9"
+          />
+          <input
+            type="text"
+            placeholder="Animal"
+            class="pirateInput"
+            id="pirateInput10"
+          />
+          <input
+            type="text"
+            placeholder="Number"
+            class="pirateInput"
+            id="pirateInput11"
+          />
+          <input
+            type="text"
+            placeholder="Verb (Past Tense)"
+            class="pirateInput"
+            id="pirateInput12"
+          />
+          <input
+            type="text"
+            placeholder="Noun"
+            class="pirateInput"
+            id="pirateInput13"
+          />
+          <input
+            type="text"
+            placeholder="Noun"
+            class="pirateInput"
+            id="pirateInput14"
+          />
+        </form>
+        <button id="pirateChangeBtn">Create Story</button>
+        <button class="clearBtn" id="pirateClearBtn">Clear</button><br />
+        <button class="returnBtn" id="pirateReturnBtn">
+          Choose Another Story
+        </button>
+      </div>
+      <div id="dateContainer">
+        <div class="storyDiv" id="dateStory">
+          Let me tell you about the strangest date I ever had. It was the
+          <span class="dateBlank" id="dateBlank1"> 2nd</span> time we went out,
+          and we decided to go to this
+          <span class="dateBlank" id="dateBlank2">Greek</span> restaurant. The
+          problem was, when we got there, we didn't realize it was
+          <span class="dateBlank" id="dateBlank3">taco</span> night. There was a
+          large group of <span class="dateBlank" id="dateBlank4">21</span>
+          <span class="dateBlank" id="dateBlank5">orchids</span> celebrating,
+          taking up half the place. Nevertheless our waiter
+          <span class="dateBlank" id="dateBlank6">Jessica</span> came to our
+          table, and we ordered some
+          <span class="dateBlank" id="dateBlank7">orange juice</span> and two
+          dinner specials. While we waited for our food, my date decided to tell
+          me about the wonderful world of
+          <span class="dateBlank" id="dateBlank8">stamps</span>, which they had
+          collected since they were
+          <span class="dateBlank" id="dateBlank9">6</span>. After what seemed
+          like <span class="dateBlank" id="dateBlank10">years</span>, our order
+          came out, but it was totally wrong! The food was completely
+          <span class="dateBlank" id="dateBlank11">dry</span>, and the waiter
+          spilled our drinks all over my
+          <span class="dateBlank" id="dateBlank12">skirt</span>. That was the
+          last straw. My date tried to stop me, but I just said, "Kiss my
+          <span class="dateBlank" id="dateBlank13">toe</span>!" and walked out;
+          never saw them again.
+        </div>
+
+        <form id="dateUserInputs">
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Ordinal Number"
+            id="dateInput1"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Nationality"
+            id="dateInput2"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Noun"
+            id="dateInput3"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Number"
+            id="dateInput4"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Plural Noun"
+            id="dateInput5"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Proper Name"
+            id="dateInput6"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Liquid"
+            id="dateInput7"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Plural Noun"
+            id="dateInput8"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Number"
+            id="dateInput9"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Plural Unit of Time"
+            id="dateInput10"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Adjective"
+            id="dateInput11"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Article of Clothing"
+            id="dateInput12"
+          />
+          <input
+            class="dateInput"
+            type="text"
+            placeholder="Body Part"
+            id="dateInput13"
+          />
+        </form>
+        <button id="dateChangeBtn">Create Story</button>
+        <button class="clearBtn" id="clearBtn">Clear</button> <br />
+        <button class="returnBtn" id="dateReturnBtn">
+          Choose Another Story
+        </button>
+      </div>
+    </div>
+    <script src="src/madLib.js"></script>
+  </body>
+</html>
